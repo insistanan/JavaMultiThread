@@ -22,6 +22,12 @@ class Site implements Runnable{
     public void run() {
 
         while (true){
+            try {
+                Thread.sleep(10);
+                //休息10毫秒
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             synchronized (this){
                 if (count==0)
                 {break;}
@@ -29,7 +35,7 @@ class Site implements Runnable{
                 count--;
                 sum++;
                 try {
-                    Thread.sleep(100);
+                    Thread.sleep(10);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

@@ -1,7 +1,7 @@
 package concept;
 
-//死锁：多个线程抱着对方需要的资源，然后形成僵持。
-public class TestLock {
+// 死锁：多个线程抱着对方需要的资源，然后形成僵持。
+public class TestSisuo {
     public static void main(String[] args) {
         Makeup g1 = new Makeup(0,"小白");
         Makeup g2 = new Makeup(1,"小灰");
